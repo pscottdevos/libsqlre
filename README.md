@@ -18,11 +18,9 @@ Enter ".help" for instructions
 Enter SQL statements terminated with a ";"
 sqlite> select load_extension('libsqlre');
 
-sqlite> select '987-654-321' regexp '9[0-9]{2}-?[0-9]{3}-?[0-9]{3}';
+sqlite> select '9987-654-3210' regexp '9-?[0-9]{3}-?[0-9]{3}-?[0-9]{4}';
 1
-sqlite> select regexp('9[0-9]{2}-?[0-9]{3}-?[0-9]{3}', '887-654-321');
+sqlite> select regexp('9-?[0-9]{3}-?[0-9]{3}-?[0-9]{4}', '987-654-3210');
 0
 sqlite>
 ```
-
-No, I'm not Canadian.
