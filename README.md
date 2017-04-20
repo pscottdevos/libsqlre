@@ -1,7 +1,7 @@
 # libsqlre
 Regular expressions extension for sqlite3
 
-## Compiling and Installing
+## Build and Install
 
 ### Linux
 On Linux, compile with:
